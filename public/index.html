@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,minimum-scale=0.5,maximum-scale=1.0,initial-scale=1.0,user-scalable=no" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title>time</title>
+    <script>
+        window.PointerEvent = void 0
+    </script>
+
+
+    <style>
+        body {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <noscript>
+    <strong></strong>
+  </noscript>
+    <div id="app"></div>
+    <script>
+        function bodyScale() {
+            var devicewidth = document.documentElement.clientWidth;
+            var scale = devicewidth / 375;
+            document.body.style.zoom = scale;
+        }
+        window.onload = window.onresize = function() {
+            bodyScale();
+
+        }
+    </script>
+    <!-- built files will be auto injected -->
+</body>
+
+</html>
